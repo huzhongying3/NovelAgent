@@ -1,0 +1,27 @@
+{
+  "entities": [
+    {
+      "name": "萧义",
+      "description": "反清义士，行走江湖",
+      "subtype": "MainCharacter",
+      "aliases": ["萧半和"],
+      "affiliation": ["晋阳萧府"]
+    }
+  ],
+  "plot_events": [
+    {
+      "summary": "萧义押送镖车途经黑松林遭袭，双方兵刃相向",
+      "day_sequence": 1,
+      "atmosphere": "紧张",
+      "key_dialogue": "护镖！挡住他们！",
+      "participants": ["萧义", "清廷侍卫"]
+    },
+    {
+      "summary": "太岳四侠为夺鸳鸯刀潜入镖局，与萧义交锋",
+      "day_sequence": 2,
+      "atmosphere": "高张力",
+      "key_dialogue": "鸳鸯刀是天下共主之争的关键！",
+      "participants": ["萧义", "太岳四侠"]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+spring:
+  application:
+    name: world-genesis
+  ai:
+    openai:
+      api-key: sk-TIEGRj7AxKWX9jJJjuAvQ5A2DEpPd9vXalo2QtMhqVBi1HFa
+      base-url: https://api.bltcy.ai
+      chat:
+        options:
+          model: gemini-3-flash-preview-nothinking
+          temperature: 0
+  neo4j:
+    uri: bolt://49.234.47.94:7687
+    authentication:
+      username: neo4j
+      password: xk53fdab
+
+worldgenesis:
+  sample-size: 40
+  max-context-chars: 12000
+  conflict-keywords:
+    - "死"
+    - "杀"
+    - "战"
+    - "血"
+    - "毒"
+    - "逃"
+  default-output: ${WORLD_OUTPUT_FILE:source_world_bible.json}
+  default-data-file: ${WORLD_DATA_FILE:records-15.json}
+
+logging:
+  level:
+    com.hxs.novelagent.worldgenesis: INFO
