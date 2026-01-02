@@ -9,6 +9,17 @@ spring:
         options:
           model: gemini-3-flash-preview-nothinking
           temperature: 0
+  datasource:
+    url: jdbc:mysql://sh-cynosdbmysql-grp-gkf6f1w0.sql.tencentcdb.com:23479/noveagent-service?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true
+    username: root
+    password: xk53fdab@
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
   neo4j:
     uri: bolt://49.234.47.94:7687
     authentication:
@@ -31,3 +42,4 @@ worldgenesis:
 logging:
   level:
     com.hxs.novelagent.worldgenesis: INFO
+    com.hxs.novelagent.novelgraph: INFO
